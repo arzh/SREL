@@ -7,13 +7,13 @@ Idea:
   Create an SQL like query that creates a regex
     Example: SRXL(`startline then "http" maybe "s" then "://" maybe "www." anythingbut " " eol`)
     
-    Simple tokening:
-    ```go
-    tokens := strings.Split(q, " ")
+	Simple tokening:
+```go
+
+	tokens := strings.Split(q, " ")
 	
-  	//var p []string
-  	toCnt := false
-  	cnt := ""
+	toCnt := false
+	cnt := ""
   	for i, e := range tokens {
   		if e[0] == '"' && (e[len(e)-1] != '"' || len(e) <= 1) && !toCnt {
   			toCnt = true
@@ -36,4 +36,4 @@ Idea:
   			
   		fmt.Println("token", i, " =", e)
   	}
-    ```
+```

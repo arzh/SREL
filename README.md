@@ -1,9 +1,7 @@
-TODO: Rewrite this doc
-
-SRXL
+SREL
 ====
 
-Structured Regular eXpression Language
+Structured Regular Expression Language
 
 Idea:
   Create an SQL like query that creates a regex
